@@ -1,0 +1,590 @@
+\documentclass[11pt]{article}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\renewcommand{\thetheorem}{\thesection.\arabic{theorem}}
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\theequation}{\thesection.\arabic{equation}}
+\renewcommand{\theexample}{\thesection.\arabic{example}}
+
+\def \mc{\mathcal}
+\def \mb{\mathbb}
+\def \te{\theta}
+\def \ra{\rightarrow}
+\def \si{\sigma}
+\def \wt{\widetilde}
+\def \ve{\varepsilon} 
+
+\begin{document}
+\setcounter{equation}{0}
+
+
+
+\title{\bf Existence of fractional impulsive functional integro-differential equations in Banach space}
+\date{}
+\author{D. N. Chalishajar\thanks{Corresponding author -: Department of Applied Mathematics, \ Virginia Military Institute (VMI), \ 431, Mallory Hall, Lexington,\  VA 24450, USA. E. mail: chalishajardn@vmi.edu}, C. Ravichandran\thanks{Department of Mathematics, \ KPR Institute of Engineering and Technology,\ Arasur,
+Coimbatore - 641 407,\ Tamil Nadu, \ India. E. Mail-: ravibirthday@gmail.com},\, S. Dhanalakshmi \thanks{ Department of Mathematics (UA), \ Kongunadu Arts and Science College, \ Coimbatore-641 029, \ Tamilnadu,\ India. E. Mail-: dhana\textunderscore bala16@yahoo.co.in} \  \ R. Murugesu \thanks{ Department of Mathematics, \ SRMV College of Arts and Science,\  \ Coimbatore - 641020,Tamilnadu,\ India. E. Mail-: arjhunmurugesh@gmail.com}}
+\maketitle
+
+\begin{abstract}
+In this paper, we established the existence of PC-mild solutions for nonlocal fractional impulsive functional integro-differential equations with an finite delay. The proofs are obtained by using the techniques of fixed point theorems, semigroup theory and generalized Bellman inequality. In this paper we have uesed the distributed characteristic operators to define the mild solution of the system. Results obtained here improve and extend some known results. 
+\end{abstract}
+{\bf Keywords:} Impulse: Fixed point theorem: integro-differential equations:   Fractional differential equations: Nonlocal conditions:\\
+{\bf 2010 Subject Classification:} 34A08, 34A37, 93B05, 47H10, 45J05. \\
+
+ 
+\section{Introduction}
+\quad In recent years, fractional calculus has received great attention because fractional derivatives provide an excellent tool for the description of memory and hereditary properties of various processes. Fractional differential equations draw a great applications in many physical phenomena such as seepage flow in porous media and in fluid dynamic traffic models. The most important advantage of using fractional differential equations in these and other applications is their non local property. Also, the study of fractional differential equations have gained considerable importance due to their application in various fields of engineering, mechanics, electrical networks, control theory of dynamical systems, viscoelasticity, electrochemistry and so on. In recent years there has been a significant development in fractional differential equations involving fractional derivatives, see the monographs of \cite{die,kil,mic,lak,mill,pod,tar,abb,luch} and the papers \cite{chen,dar,mop1,baz,mop2,pan,wan,bale,bal1}. 
+
+
+\par The study of impulsive differential equation is linked to their utility in simulating processes and phenomena subject to short time perturbations during their evolution. The perturbations are performed discretely and their duration is negligible in comparison with the total duration of the processes and phenomena. Integro-differential equations play an important role in many branches of linear and non linear functional analysis and their applications in the theory of engineering, mechanics, physics, chemistry, biology, economics, electrostatics. Recently, impulsive integro-differential equations have become an important object of investigation stimulated by  their  numerous applications to problems in mechanics, electrical engineering, medicine,  biology, ecology etc, we refer \cite{her,deb,shu,bala,ben,ras,ravi,kha}.
+
+\par The advantage of using non local conditions is they are measurable at more places and those can be incorporated to get better models. The non local Cauchy problem for abstract evolution differential equation was first studied by Bysewski \cite{bys}. For the importance of non local conditions in different fields, we refer the reader to \cite{moph1,xia,bys1,benc}.
+
+\par Recently in \cite{qin} author studied the existence of mild solutions for impulsive fractional semi linear integro-differential equations using Banach contraction Principle and Schaefer's fixed point theorem. Here authors have considered the system without delay an without non local condition. Our work generalizes the work done in \cite{qin} with abstract formulation. According to our knowledge this is an untreated article in the literature. 
+
+Motivated by the above mentioned paper we study the existence of mild solutions for nonlocal impulsive fractional semi linear integro-differential equations of the form 
+\begin{align*}
+D^q_tx(t)&=Ax(t)+f\Big(t,x_t,\int^t_0h(t,s,x_s)ds,\int^b_0k(t,s,x_s)ds\Big),\ \ t\in J=[0,b], \ t\neq t_k, \\
+x(0)&=x_0+g(x) \ \in X,  \\
+\Delta x|_{t=t_k} &=I_k(x(t_k^-)), \ \ k=1,2,\cdots, m; 
+\end{align*}
+\noindent where $D_t^q $ is the Caputo fractional derivative, $0<q<1$, the histories $x_t : (-r,0] \rightarrow X$ are defined by $x_t (\theta)=x(t+\theta) $ belongs to a Banach Space $X$.  $A:D(A) \subset X \rightarrow X$ is the infinitesimal generator of a strongly continuous semigroup $(T(t))_{t\geq 0}$ of a uniformly bounded operator on $X$, and $A$ is a bounded linear operator. $f:J \times X \times X \times X \rightarrow X$ is given $X$ value functions, $h,k :J  \times J \times X \rightarrow X$ are continuous, $I_k:X \rightarrow X$ are impulsive functions, $0=t_0<t_1<\cdots <t_m<t_{m+1}=b, \ \Delta x |_{t=t_k}=x(t_k^+)-x(t_k^-), \ x(t_k^+)=\displaystyle\lim_{h \rightarrow 0^+} x(t_k+h)$ and $x(t_k^-)=\displaystyle\lim_{h \rightarrow 0^-}x(t_k+h)$ represent the right and left limits of $x(t)$ at $t=t_k$, respectively.  And also our method avoid the compactness conditions on the semigroup $(T(t))_{t \geq 0}$, and some other hypotheses are more general compared with the previous research papers.
+\par In section 2, we give some preliminary definitions and lemmas that are to be used later to prove our main results. In Section 3, the existence of $PC$ mild solutions for equation (1.1)-(1.3) with non local conditions is discussed.  The results are obtained by using Banach Contraction principle and Schaefer's fixed point theorem.
+\setcounter{equation}{0}
+
+\section{Preliminaries}
+\par Let us consider the set of functions $PC[J,X] \ = \left\{x:J \rightarrow X \ | \ x\in C[(t_k,t_{k+1}), X] \ and \ there \right. \\ \left. exist \ x(t_k^+) \ and  \ x(t_k^-), \ k=0,1,2,\cdots,m \ with \ x(t_k^-)=x(t_k) \right\}$.\\
+Endowed with the norm $||x||_{PC}=\displaystyle\sup_{t\in J}||x(t)||,$ it is easy to know that $(PC[J, X, ||.||_{PC})$ is a Banach space. Throughout this paper, let $A$ be the infinitesimal generator of a $C_0$ semigroup $(T(t))_{t\geq 0}$ of a uniformly bounded operators on $X$ and let $L_B(X)$ be the Banach space of all linear and bounded operator on $X$. For a $C_0$ semigroup $(T(t))_{t\geq 0}$, we set $M_1 \ = \displaystyle\sup_{t\in J}||T(t)||_{L_B(X)}.$ \\ 
+For each positive constant r, set $B_r=\{x\in PC[J,X]:||x||\leq r\}.$
+
+Let us recall the following known definitions. For more details see \cite{kil,bal1}.
+\begin{definition}
+The fractional integral of order $\alpha$ with the lower limit zero for a function $f$ is defined as
+$$I^{\alpha} f(t)= \frac{1}{\Gamma(\alpha)}\int_0^t\frac{f(s)}{(t-s)^{1-\alpha}}ds,\quad t>0,\quad \alpha>0, $$
+provided the right hand-side is point-wise defined on $[0,\infty)$, where $\Gamma(\cdot)$ is the gamma function, which is defined by $\Gamma(\alpha)=\int_{0}^{\infty}t^{\alpha-1}e^{-t}dt.$
+\end{definition}
+
+
+\begin{definition}
+The Riemann-Liouville  fractional derivative  of order $ \alpha>0,\ n-1<\alpha<n,\ n\in N$, is defined as
+\begin{gather*}
+^{(R-L)}D_{0+}^{\alpha}f(t)=\frac{1}{\Gamma(n-\alpha)}\left(\frac{d}{dt}\right)^n\int_0^t (t-s)^{n-\alpha-1}f(s)ds,
+\end{gather*}
+where the function $f(t)$ has absolutely continuous derivative up to order $(n-1)$.
+\end{definition}
+
+\begin{definition}
+The Caputo derivative of order $\alpha$ for a function $f:[0,\infty)\ra R$ can be written as 
+\begin{align*}
+D^\alpha f(t)= D^\alpha\left(f(t)-\sum_{k=0}^{n-1}\frac{t^k}{k!}f^{(k)}(0)\right),\quad t>0, \quad n-1<\alpha<n.
+\end{align*}
+\end{definition}
+
+
+\begin{remark}
+(i)If $f(t)\in C^{n}[0,\infty),$ then
+\begin{gather*}
+^CD^{\alpha}f(t)= \frac{1}{\Gamma(n-\alpha)}\int_0^t \frac{f^{(n)}(s)}{(t-s)^{\alpha+1-n}}ds = I^{n-\alpha}f^{(n)}(t),\ t>0,\ n-1<\alpha<n.
+\end{gather*}
+(ii)\ The Caputo derivative of a constant is equal to zero.\\
+(iii)\ If $f$ is an abstract function with values in $X$, then integrals which appear in Definition $2.1$ and $2.2$ are taken in Bochner's sense.
+\end{remark}
+
+
+\begin{definition}\cite{wan}
+By a $PC$-mild solution of the equation (1.1) we mean that a function $x\in PC[I,X]$ which satisfies the following integral equation
+\begin{eqnarray}
+x(t) =\left\{\begin{array}{ll}\mc{T}(t)(x_0+g(x)) +\int^t_0(t-s)^{q-1}\mc{S} (t-s)  \\ [3pt] \indent \indent (\times)f(s,x_s,\int^s_0h(s,\tau,x_\tau)d\tau,\int^b_0k(s,\tau,x_\tau)d\tau)ds, \ \ \ \ t\in [0,t_1], \\ [3pt]
+\mc{T}(t)(x_0+g(x))+\mc{T}(t-t_1)I_1(x(t_1^-))+\int^t_0(t-s)^{q-1}\mc{S}(t-s)\\ [3pt] \indent \indent (\times)f(s,x_s,\int^s_0h(s,\tau,x_\tau)d\tau,\int^b_0k(s,\tau,x_\tau)d\tau)ds, \ \ \ \ t\in(t_1,t_2], \\ [3pt]
+\vdots \\ [3pt]
+\mc{T}(t)(x_0+g(x))+\displaystyle \sum_{k=1}^{m} \mc{T}(t-t_k)I_k(x(t_k^-))+\int^t_0(t-s)^{q-1}\mc{S}(t-s)\\ [3pt] \indent \indent (\times)f(s,x_s,\int^s_0h(s,\tau,x_\tau)d\tau,\int^b_0k(s,\tau,x_\tau)d\tau)ds, \ \ \ \ t\in(t_m,b],
+\end{array}
+\right.
+\end{eqnarray}
+where $\mc{T}(.)$ and $\mc{S}(.)$ are called characteristic solution operators and given by
+\begin{eqnarray}
+ville  fractional derivative  of order $ \alpha>0,\ n-1<\alpha<n,\ n\in N$, is defined as0,t_1],X]$.
+\end{eqnarray}
+and for $\theta \in (0,\infty),$
+\begin{eqnarray*}
+\xi_q(\theta)=\frac{1}{q}\theta^{-1-\frac{1}{q}}\varpi_q(\theta^{-\frac{1}{q}})\geq 0, \ \ \varpi_q(\theta)=\frac{1}{\pi}\displaystyle \sum_{n=1}^{\infty}(-1)^{n-1}\theta^{-qn-1}\frac{\Gamma(nq+1)}{n!}sin(n\pi q),
+\end{eqnarray*}
+where $\xi_q $ is a probability density function defined on $(0,\infty)$, that is
+\begin{eqnarray*}
+\xi_q(\theta)\geq 0, \ \ \theta \in (0,\infty) \ \ \ and \ \ \int^\infty_0 \xi_q(\theta)d\theta =1.
+\end{eqnarray*}
+\end{definition}
+
+
+\begin{definition}\cite{pazy}
+Let $X$ be a Banach space, a one parameter family $T(t), \ 0\leq t<+\infty $, of bounded linear operators from $X$ to $X$ is a semigroup of bounded linear operators on $X$ if\\
+(1)$T(0)=I$, (here $I$ is the identity operator on $X$)\\
+(2)$T(t+s)=T(t)T(s)$ for every $t,s\geq 0,$ (the semigroup property)\\
+A semigroup of bounded linear operator, $T(t)$, is uniformly continuous if $\displaystyle \lim_{t\downarrow 0}||T(t)-I||=0.$
+\end{definition}
+\begin{lemma} \cite{pazy}
+Linear operator $A$ is the infinitesimal generator of a uniformly continuous semigroup if and only if $A$ is the bounded linear operator.
+\end{lemma}
+\begin{lemma}\cite{die,wan}
+Let $T$ be a continuous and compact mapping of a Banach space $X$ into itself, such that
+\begin{eqnarray*}
+\left\{x\in X \ : \ x=\lambda Tx \ for \ some \ 0\leq \lambda \leq 1 \right\}
+\end{eqnarray*}
+is bounded. Then $T$ has a fixed point.
+\end{lemma}
+\begin{lemma}\cite{wan}
+The operator $\mc{T} (t)$ and $\mc{S} (t)$ have the following properties\\
+(i)For any fixed $t\geq 0, \ \mc{T}(t)$ and $\mc{S}(t)$ linear and bounded operator, i.e. for any $x\in X$,
+\begin{eqnarray*}
+||\mc{T}(t)x||\leq M_1||x||, \ \ \ ||\mc{S}(t)x||\leq \frac{qM_1}{\Gamma(1+q)}||x||.
+\end{eqnarray*}
+(ii)$\left\{\mc{T}(t), \ t\geq 0\right\} $ and $ \left\{\mc{S}(t), \ t\geq 0 \right\}$ are strongly continuous.\\
+(iii)$\left\{\mc{T}(t), \ t\geq 0\right\} $ and $ \left\{\mc{S}(t), \ t\geq 0 \right\}$ are uniformly continuous, that is, for each fixed $t>0$, and $\epsilon >0$, there exists $h>0$ such that
+\begin{eqnarray*}
+||\mc{T}(t+\epsilon)-\mc{T}(t)||\leq \epsilon, \ for \ t+\epsilon \geq 0 \ and \ |\epsilon|<h,\\
+||\mc{S}(t+\epsilon)-\mc{S}(t)||\leq \epsilon, \ for \ t+\epsilon \geq 0 \ and \ |\epsilon|<h.
+\end{eqnarray*}
+\end{lemma}
+\setcounter{equation}{0}
+
+\section{Existence results}
+In this section, we give the existence of mild solutions of the system (1.1).
+To establish our results, we introduce the following hypotheses.
+\begin{enumerate}
+\item[$\bf (H1)$] $f:J \times X \times X \times X \rightarrow X$ is continuous, and there exists functions $\mu_1, \mu_2, \mu_3 \in L[J,R^+]$ such that
+\begin{eqnarray*}
+||f(t,x_1,x_2,x_3)-f(t,y_1,y_2,y_3)||\leq \mu_1(t)||x_1-y_1||+\mu_2(t)||x_2-y_2||+\mu_3(t)||x_3-y_3||, \\   x_i,y_i\in X, \ i=1,2,3.
+\end{eqnarray*}
+\item[$\bf (H2)$] $h, k :J \times J \times X \rightarrow X$ is continuous and there exist $M_h, \ M_k >0$ such that
+\begin{eqnarray*}
+||h(t,s,x_1)-h(t,s,y_1)||& \leq & M_h||x_1-y_1||,\\
+||k(t,s,x_1)-k(t,s,y_1)|| &\leq & M_k ||x_1-y_1||, \ \ x_1, \ y_1 \in X.
+\end{eqnarray*}
+\item[$\bf (H3)$] $g:PC([0,b],X)$ is continuous and there exists a constant $G >0$ such that
+\begin{eqnarray*}
+ ||g(x)-g(y)|| & \leq &   G||x-y||   \ \ \ \forall x,y \in PC([0,b],X) \\
+ ||g(0)|| &\leq &k_1.
+\end{eqnarray*}
+\item [$\bf (H4)$]The function $I_k :X \rightarrow X$ are continuous and there exist  $\rho_k>0$ such that 
+\begin{eqnarray*}
+||I_k(x)-I_k(y)||   \leq   \rho_k ||x-y||, \ \ \  x,y \in X, \ \ k=1,2,\cdots, m 
+\end{eqnarray*}
+\item [$\bf (H5)$] The function $\Omega_m(t) \ : J \rightarrow \mathbb{R}^+$ is defined by
+\begin{eqnarray*}
+\Omega_m(t)=M_1(G+m\rho_m)+\frac{M_1 b^q}{\Gamma(1+q)}(\mu_1(t)+\mu_2(t)M_hb+\mu_3(t)M_kb)
+\end{eqnarray*}
+where $0<\Omega_m(t)<1, \ t\in J$.
+\item [$\bf (H6)$] The constants $\Omega_u$ and $\Omega'(t) :J \rightarrow \mathbb{R}^+ $ are defined by
+\begin{eqnarray*}
+\Omega_u & = &M_1K(G+m\rho_m)+\frac{M_1b^q K}{\Gamma(1+q)}\Big(\mu_1(t)+\mu_2(t)M_hb+\mu_3(t)M_kb\Big)\\
+\Omega'_m(t) & = & M_1(G+m\rho_m)+\frac{M_1b^q}{\Gamma(1+q)}(\mu_1(t)+\mu_2(t)M_hb+\mu_3(t)M_kb)+\frac{M_1b^q\Omega_u}{\Gamma(1+q)}
+\end{eqnarray*}
+and $0<\Omega ' _m(t) <1, \ t\in J$.
+\end{enumerate}
+\begin{theorem}
+If the hypotheses $(H1)-(H5)$ are satisfied, then the nonlocal fractional impulsive integrodifferential equation (1.1) has a unique mild solution $x\in PC[J, X]$.
+\end{theorem}
+{\bf Proof:} Define an operator $N$ on $PC[J,X] $ by
+\begin{eqnarray}
+(Nx)(t)=\left\{\begin{array}{ll}\mc{T}(t)(x_0+g(x)) +\int^t_0(t-s)^{q-1}\mc{S} (t-s)  \\ [3pt] \indent \indent f\Big(s,x_s,\int^s_0h(s,\tau,x_\tau)d\tau,\int^b_0k(s,\tau,x_\tau)d\tau\Big)ds, \ \ \ \ t\in [0,t_1], \\ [3pt]
+\mc{T}(t)(x_0+g(x))+\mc{T}(t-t_1)I_1(x(t_1^-))+\int^t_0(t-s)^{q-1}\mc{S}(t-s)\\ [3pt] \indent \indent f\Big(s,x_s,\int^s_0h(s,\tau,x_\tau)d\tau,\int^b_0k(s,\tau,x_\tau)d\tau\Big)ds,, \ \ \ \ t\in(t_1,t_2], \\ [3pt]
+\vdots \\ [3pt]
+\mc{T}(t)(x_0+g(x))+\displaystyle \sum_{k=1}^{m} \mc{T}(t-t_k)I_k(x(t_k^-))+\int^t_0(t-s)^{q-1}\mc{S}(t-s)\\ [3pt] \indent \indent f\Big(s,x_s,\int^s_0h(s,\tau,x_\tau)d\tau,\int^b_0k(s,\tau,x_\tau)d\tau\Big)ds, \ \ \ \ t\in(t_m,b].
+\end{array}
+\right.
+\end{eqnarray} 
+We shall show that $N$ is well defined on $PC[J,X]$. For $0\leq \tau <t \leq t_1$, applying (3.1), we obtain
+\begin{eqnarray*}
+||(Nx)(t)-(Nx)(\tau)||& \leq & ||T(t)-T(\tau)|| \ ||x_0+g(x)||\\
+& & ||\int_0^t (t-s)^{q-1}\mc{S} (t-s)  f\(s,x_s,\int^s_0h(s,\tau,x_\tau)d\tau,\int^b_0k(s,\tau,x_\tau)d\tau)ds||\\
+\end{eqnarray*}
+\begin{eqnarray}&\leq & ||T(t)-T(\tau)|| \ \left[||x_0||+G||x||+k_1\right]  \nonumber \\ & & +\left\|\int_\tau^t(t-s)^{q-1}\mc{S} (t-s)   f(s,x_s,\int^s_0h(s,\tau,x_\tau)d\tau,\int^b_0k(s,\tau,x_\tau)d\tau)ds\right\| \nonumber \\ & &
++\left\|\int^\tau_0 (t-s)^{q-1}\left[\mc{S} (t-s)-\mc{S} (\tau-s)\right]  f(s,x_s,\int^s_0h(s,\tau,x_\tau)d\tau,\int^b_0k(s,\tau,x_\tau)d\tau)ds \right\| \nonumber \\ & &
++\left\|\int^\tau_0\left[(t-s)^{q-1}-(\tau-s)^{q-1}\right]\mc{S}(\tau-s)f(s,x_s,\int^s_0h(s,\tau,x_\tau)d\tau,\int^b_0k(s,\tau,x_\tau)d\tau)ds \right\| \nonumber 
+\end{eqnarray}
+We know that the inequality $|t^\sigma-\tau^\sigma|\leq (t-\tau)^\sigma$ for $ \sigma \in (0,1]$ and $0<\tau \leq t$ and Lemma 2.3, it is obviously that $||(Nx)(t)-(Nx)(\tau)||\rightarrow 0$ as $t \rightarrow \tau$. Thus $Nx \in [(0,t_1],X]$.
+\par For $t_1<\tau<t\leq t_2$, we have
+\begin{eqnarray}
+||(Nx)(t)-(Nx)(\tau)||&\leq & ||T(t)-T(\tau)|| \ \left[||x_0||+G||x||+k\right] \nonumber \\ & &
+||T(t-t_1)-T(\tau-t_1)|| \ ||I_1(x(t_1^-))|| \nonumber \\ & & +\left\|\int_\tau^t(t-s)^{q-1}\mc{S} (t-s) \right. \nonumber \\ & & \left.  f\Big(s,x_s,\int^s_0h(s,\tau,x_\tau)d\tau,\int^b_0k(s,\tau,x_\tau)d\tau\Big)ds\right\| \nonumber \\ & &
++\left\|\int^\tau_0 (t-s)^{q-1}\left[\mc{S} (t-s)-\mc{S} (\tau-s)\right] \right. \nonumber \\ & & \left. f\Big(s,x_s,\int^s_0h(s,\tau,x_\tau)d\tau,\int^b_0k(s,\tau,x_\tau)d\tau\Big)ds \right\| \nonumber \\ & &
++\left\|\int^\tau_0\left[(t-s)^{q-1}-(\tau-s)^{q-1}\right]\mc{S}(\tau-s) \right. \nonumber \\ & & \left. f\Big(s,x_s,\int^s_0h(s,\tau,x_\tau)d\tau,\int^b_0k(s,\tau,x_\tau)d\tau\Big)ds \right\| \nonumber 
+\end{eqnarray}
+It is easy to get, as $t \rightarrow \tau$, the right hand side of the above inequality tends to zero. Thus, we can deduce that $Nx \in C[(t_1,t_2],X]$. By repeating the same procedure, we can also obtain that $Nx \in C[(t_2,t_3],X], \cdots , Nx \in C[(t_m,b],X]$. That is, $Nx \in PC[J,X]$.
+\noindent Take $t \in (0,t_1]$, then 
+\begin{eqnarray*}
+||(Nx)(t)-(Ny)(t)|| & \leq & ||T(t)|| \ ||x_0+g(x)-x_0-g(y)|| \\ & &
++\left\|\int^t_0 (t-s)^{q-1} \mc{S} (t-s) \left[f(s,x_s,\int^s_0h(s,\tau,x_\tau)d\tau,\int^b_0k(s,\tau,x_\tau)d\tau) \right. \right. \\ & & \left.\left. - f(s,y_s,\int^s_0h(s,\tau,y_\tau)d\tau,\int^b_0k(s,\tau,y_\tau)d\tau)\right]ds\right\|   
+\end{eqnarray*}
+\begin{eqnarray*}
+& \leq & M_1G||x-y||_{PC}+\frac{qM_1}{\Gamma(1+q)}\int^t_0(t-s)^{q-1} \\ & & \left[\mu_1(s)||x_s-y_s||+\mu_2(s)M_hb||x_s-y_s||+\mu_3(s)M_kb||x_s-y_s|| \ \right] \ ds.
+\end{eqnarray*}
+So we deduce that
+\begin{eqnarray}
+||(Nx)(t)-(Ny)(t)||_{PC} \leq  \left[M_1G+\frac{M_1b^q}{\Gamma(1+q)}\left(\mu_1(t)+\mu_2(t)M_hb+\mu_3(t)M_kb\right)\right] ||x-y||_{PC}\nonumber \\
+\end{eqnarray}
+For each $t\in (t_1,t_2] $, using hypotheses,
+\begin{eqnarray}
+||(Nx)(t)-(Ny)(t)||_{PC} & \leq &  \left[M_1(G+\rho_1) \right. \nonumber \\ & & \left. +\frac{M_1b^q}{\Gamma(1+q)}\left(\mu_1(t)+\mu_2(t)M_hb+\mu_3(t)M_kb\right)\right] ||x-y||_{PC}\nonumber 
+\end{eqnarray}
+In general, for each $t\in (t_i,t_{i+1}], $ using (H5)
+\begin{eqnarray}
+||(Nx)(t)-(Ny)(t)||_{PC} & \leq &  \left[M_1(G+m\rho_m) \right. \nonumber \\ & & \left. +\frac{M_1b^q}{\Gamma(1+q)}\left(\mu_1(t)+\mu_2(t)M_hb+\mu_3(t)M_kb\right)\right] ||x-y||_{PC}\nonumber 
+\end{eqnarray}
+\begin{eqnarray*}
+& \leq & \Omega_m(t)||x-y||_{PC}
+\end{eqnarray*}
+From the assumption (H5) and in the view of the contraction mapping principlw, we get $N$ has a unique fixed point $x\in PC[I,X]$, that is 
+\begin{eqnarray}
+x(t) =\left\{\begin{array}{ll}\mc{T}(t)(x_0+g(x)) +\int^t_0(t-s)^{q-1}\mc{S} (t-s)  \\ [3pt] \indent \indent (\times)f(s,x_s,\int^s_0h(s,\tau,x_\tau)d\tau,\int^b_0k(s,\tau,x_\tau)d\tau)ds, \ \ \ \ t\in [0,t_1], \\ [3pt]
+\mc{T}(t)(x_0+g(x))+\mc{T}(t-t_1)I_1(x(t_1^-))+\int^t_0(t-s)^{q-1}\mc{S}(t-s)\\ [3pt] \indent \indent (\times)f(s,x_s,\int^s_0h(s,\tau,x_\tau)d\tau,\int^b_0k(s,\tau,x_\tau)d\tau)ds,, \ \ \ \ t\in(t_1,t_2], \\ [3pt]
+\vdots \\ [3pt]
+\mc{T}(t)(x_0+g(x))+\displaystyle \sum_{k=1}^{m} \mc{T}(t-t_k)I_k(x(t_k^-))+\int^t_0(t-s)^{q-1}\mc{S}(t-s)\\ [3pt] \indent \indent(\times) f(s,x_s,\int^s_0h(s,\tau,x_\tau)d\tau,\int^b_0k(s,\tau,x_\tau)d\tau)ds, \ \ \ \ t\in(t_m,b],
+
+\right.
+\end{eqnarray}
+is a $PC$ mild solution of equation (1.1).\\
+Next theorem is based on Schaefer's fixed point theorem, let us list the following hypotheses:
+\begin{enumerate}
+\item[$\bf (H7)$] $f:J \times X \times X \times X \rightarrow X $ is continuous and there exist functions $c_1, c_2, c_3,c_4 \in L(J,R^+)$, such that
+\begin{eqnarray*}
+||f(t,x,y,z)|| \leq c_1(t)+c_2(t)||x||+c_3(t)||y||+c_4(t)||z||, \ t\in J, \ x,y,z\in X.
+\end{eqnarray*}
+\item[$\bf (H8)$]$h,k:J\times J \times X \rightarrow X$ is continuous and there exist functions $d_1,d_2,d_3,d_4 \in C(I,R^+)$, such that
+\begin{eqnarray*}
+||h(t,s,x)|| & \leq & d_1(s)+d_2(s)||x||\\
+||k(t,s,y)|| & \leq & d_3(s)+d_4(s) ||y||, \ \ \ x,y\in X.
+\end{eqnarray*}
+\item[$\bf (H9)$] There exist $ \Phi_k \in C[J,R^+]$, such that
+\begin{eqnarray*}
+||I_k(x)|| \leq \Phi_k(t)||x||, \ \ \ x\in X.
+\end{eqnarray*}
+\item[$\bf (H10)$] For all bounded subsets $B_r$, the set
+\begin{eqnarray*}
+\Pi_{h,\delta}(t)=\left\{T_\delta(t)(x_0+g(x))+\int_0^{t-h}(t-s)^{q-1}S_\delta (t-s)F(s)ds+\displaystyle \sum_{k=1}^m T_\delta(t-t_k)I_k(x(t_k^-)) \right. \\ \left. : \ x\in B_r \right\}
+\end{eqnarray*}
+is relatively compact in $X$ for arbitrary $h \in (0,t)$ and $\delta >0$, where
+\begin{eqnarray*}
+T_\delta (t)=\int^\infty_\delta \xi_q(\theta)T(t^q\theta)d\theta, \ \ \ S_\delta(t)=q\int^\infty_\delta \theta \xi _q(\theta)T(t^q\theta)d\theta.
+\end{eqnarray*}
+\item[$\bf (H11)$]For all bounded subsets $B_r$, the set
+\begin{eqnarray*}
+\Pi '_{h,\delta}(t)=\left\{T_\delta(t)(x_0+g(x))+\int_0^{t-h}(t-s)^{q-1}S_\delta (t-s)F(s)ds\right. \\ \left.+\displaystyle \sum_{k=1}^m T_\delta(t-t_k)I_k(x(t_k^-))  : \ x\in B_r \right\}
+\end{eqnarray*}
+is relatively compact in $X$ for arbitrary $h\in (0,t)$ and $\delta >0$.
+\end{enumerate}
+
+\begin{theorem}
+If the hypotheses $(H6)-(H10)$ are satisfied, then the  nonlocal fractional impulsive integrodifferentiel equation (1.1) has atleast one mild solution $x\in PC[J,X]$.
+\end{theorem}
+{\bf Proof :} From Theorem 3.1, we know that operator $N$ is defined as follows:-
+\begin{eqnarray}
+(Nx)(t)=\left\{\begin{array}{ll}\mc{T}(t)(x_0+g(x)) +\int^t_0(t-s)^{q-1}\mc{S} (t-s)  \\ [3pt] \indent \indent (\times)f(s,x_s,\int^s_0h(s,\tau,x_\tau)d\tau,\int^b_0k(s,\tau,x_\tau)d\tau)ds, \ \ \ \ t\in [0,t_1], \\ [3pt]
+\mc{T}(t)(x_0+g(x))+\mc{T}(t-t_1)I_1(x(t_1^-))+\int^t_0(t-s)^{q-1}\mc{S}(t-s)\\ [3pt] \indent \indent (\times)f(s,x_s,\int^s_0h(s,\tau,x_\tau)d\tau,\int^b_0k(s,\tau,x_\tau)d\tau)ds, \ \ \ \ t\in(t_1,t_2], \\ [3pt]
+\vdots \\ [3pt]
+\mc{T}(t)(x_0+g(x))+\displaystyle \sum_{k=1}^{m} \mc{T}(t-t_k)I_k(x(t_k^-))+\int^t_0(t-s)^{q-1}\mc{S}(t-s)\\ [3pt] \indent \indent f(s,x_s,\int^s_0h(s,\tau,x_\tau)d\tau,\int^b_0k(s,\tau,x_\tau)d\tau)ds, \ \ \ \ t\in(t_m,b].
+\end{array}
+\right.
+\end{eqnarray} 
+We shall prove the results in following steps:\\
+{\bf Step 1 :} Continuity of $N$ on $(t_i,t_{i+1}] \ (i=0,1,2,\cdots, m)$
+Let $x_n,x \in PC[J,X]$ such that $||x_n-x^*||_{PC} \rightarrow 0 \ (n\rightarrow +\infty), \ then \ r \ = \ sup_n||x_n||_{PC}<\infty$ and $||x^*||_{PC}<r$, for every $t\in (t_i,t_{i+1}] \ (i=0,1,2,\cdots,m)$, we have
+\begin{eqnarray}
+||(Nx_n)(t)-(Nx)(t)||&\leq & M_1G||x_n-x|| \nonumber \\ & &+\left\|\displaystyle \sum_{k=1}^mT(t-t_k)I_k(x_n(t_k^-))-\displaystyle \sum_{k=1}^m T(t-t_k)I_k(x(t_k^-))\right\| \nonumber \\ & &
++\frac{qM_1}{\Gamma(1+q)}\int^t_0 (t-s)^{q-1}\left\|f\Big(s,x_{n_s},\int^s_0h(s,\tau,x_{n_\tau})d\tau,\int^b_0k(s,\tau,x_{n_\tau})d\tau
+\Big) \right. \nonumber \\ & & \left. -f\Big(s,x_s,\int^s_0h(s,\tau,x_\tau)d\tau,\int^b_0k(s,\tau,x_\tau)d\tau\Big)\right\|ds.
+\end{eqnarray}
+Since the functions $f,I_k$ and $g$ are continuous,
+\begin{eqnarray}
+f\Big(s,x_{n_s},\int^s_0h(s,\tau,x_{n_\tau})d\tau,\int^b_0k(s,\tau,x_{n_\tau})d\tau\Big) \rightarrow \nonumber \\   -f\Big(s,x_s,\int^s_0h(s,\tau,x_\tau)d\tau,\int^b_0k(s,\tau,x_\tau)d\tau\Big), \ \ n\rightarrow \infty.
+\end{eqnarray}
+By condition (H7)-(H8) we know that
+\begin{eqnarray*}
+\left\|f\Big(s,x_{n_s},\int^s_0h(s,\tau,x_{n_\tau})d\tau,\int^b_0k(s,\tau,x_{n_\tau})d\tau\Big) \right. \\ \left.  -f\Big(s,x_s,\int^s_0h(s,\tau,x_\tau)d\tau,\int^b_0k(s,\tau,x_\tau)d\tau\Big)\right\|.\\
+ \leq  c_1(s)+c_2(s)||x_{n_s}||+c_3(s)\left\|\int^s_0h(s,\tau,x_{n_\tau})d\tau\right\|+c_4(s)\left\|\int^b_0k(s,\tau,x_{n_\tau})ds\right\|\\
++c_1(s)+c_2(s)||x_s||+c_3(s)\left\|\int^s_0h(s,\tau,x_\tau)d\tau\right\|+c_4(s)\left\|\int^b_0k(s,\tau,x_\tau)ds\right\|.
+\end{eqnarray*}
+\begin{eqnarray*}
+\leq 2c_1(s)+c_2(s)\left(||x_n||+||x||\right)+2c_3(s)\int^s_0d_1(s)+c_3(s)\int^s_0d_2(s)\left(||x_n||+||x||\right)ds \\
++2c_4(s)\int^b_0d_3(s)ds+c_4(s)\int^b_0d_4(s)\left(||x_n||+||x||\right)ds.
+\end{eqnarray*}
+\begin{eqnarray*}
+\leq 2c_1(s)+2c_3(s)\int^s_0d_1(s)ds+2c_4(s)\int^b_0d_3(s)ds\\
++\left(c_2(s)+c_3(s)\int^s_0d_2(s)ds+c_4(s)\int^b_0d_4(s)ds\right)  \ \left(||x_n||+||x||\right).
+\end{eqnarray*}
+\begin{eqnarray}
+\leq 2c_1(s)+2c_3(s)\int^s_0d_1(s)ds+2c_4(s)\int^b_0d_3(s)ds \nonumber\\
++\left(2c_2(s)+2c_3(s)\int^s_0d_2(s)ds+2c_4(s)\int^b_0d_4(s)ds\right) \ r. \nonumber 
+\end{eqnarray}
+Hence,
+\begin{eqnarray}
+(t-s)^{q-1}\left\|f\left(s,x_{n_s},\int^s_0h(s,\tau,x_{n_\tau})d\tau,\int^b_0k(s,\tau,x_{n_\tau})d\tau\right) \right. \nonumber \\ \left.
+-f\left(s,x_s,\int^s_0h(s,\tau,x_\tau)d\tau,\int^b_0k(s,\tau,x_\tau)d\tau\right)\right\|\in L^1[J,R^+].
+\end{eqnarray}
+By the Lebesgue dominated convergence theorem, we get
+\begin{eqnarray}
+\int^t_0(t-s)^{q-1}\left\|f\left(s,x_{n_s},\int^s_0h(s,\tau,x_{n_\tau})d\tau,\int^b_0k(s,\tau,x_{n_\tau})d\tau\right) \right. \nonumber \\ \left.-f\left(s,x_s,\int^s_0h(s,\tau,x_\tau)d\tau,\int^b_0k(s,\tau,x_\tau)d\tau\right)\right\|ds\rightarrow 0.
+\end{eqnarray}
+It is easy to get
+\begin{eqnarray}
+\displaystyle \lim_{n\rightarrow \infty}||(Nx_n)(t)-(Nx)(t)||_{PC}=0.
+\end{eqnarray}
+Thus $N$ is continuous on $(t_i,t_{i+1}], \ (i=0,1,2,\cdots, m)$.\\
+{\bf Step 2:} $N$ maps bounded sets into bounded sets in $PC[J,X]$.
+From (3.8) we get
+\begin{eqnarray}
+\left\|(Nx)(t)\right\|&\leq &||T(t)|| \ ||x_0+g(x)||+\frac{qM_1}{\Gamma(1+q)}\nonumber \\
+& & \int^t_0(t-s)^{q-1}\left\|f\left(s,x_s,\int^s_0h(s,\tau,x_\tau)d\tau,\int^b_0k(s,\tau,x_\tau)d\tau\right)\right\|ds \nonumber\\
+& & +m||T(t-t_k) \ I_k(x(t_k^-))||.
+\end{eqnarray}
+and we know that
+\begin{eqnarray*}
+\left\|f\left(s,x_s,\int^s_0h(s,\tau,x_\tau)d\tau,\int^b_0k(s,\tau,x_\tau)d\tau\right)\right\|& & \\
+& \leq & c_1(s)+c_3(s)\int^s_0d_1(\tau)d\tau+c_4(s)\int^b_0d_3(\tau)d\tau\\ & &+\left(c_2(s)+c_3(s)\int^s_0d_2(\tau)d\tau+c_4(s)\int^b_0d_4(\tau)d\tau\right)||x||\\
+&\leq & \Psi_1(s)+\Psi_2(s)||x||.
+\end{eqnarray*}
+From the above we get
+\begin{eqnarray*}
+||(Nx)(t)||&\leq& M_1\left(||x_0||+G||x||+k_1\right)+mM_1\Phi_k||x||\\
+& &+\frac{b^qM_1}{\Gamma(1+q)}\int^t_0(\Psi_1(s)+\Psi_2(s)||x||)ds,
+\end{eqnarray*}
+Thus for any $x\in B_r =\left\{x\in PC[J,X]:||x||_{PC} \leq r\right\}$
+\begin{eqnarray}
+||(Nx)(t)||&\leq& M_1\left(||x_0||+k_1\right)+\frac{b^qM_1}{\Gamma(1+q)}\int^b_0\Psi_1(s)ds\nonumber\\
+& &+\left(G+mM_1\Phi_k+\frac{b^qM_1}{\Gamma(1+q)}\int^t_0\Psi_2(s)ds\right)r\nonumber\\
+& = & \gamma_1
+\end{eqnarray}
+Hence $||(Nx)(t)|| \leq \gamma_1$, (i.e.,) $N $ maps bounded sets to bounded sets in $PC[J,X]$.\\
+{\bf Step 3 :} $N(B_r)$ is equicontinuous with $B_r$ on $(t_i,t_{i+1}] \ (i=0,1,2,\cdots, m),$ 
+\par For any $x\in B_r, \ t',t'' \in (t_i,t_{i+1}] \ (i=0,1,2,\cdots, m) ,$ we obtain
+\begin{eqnarray*}
+||(Nx)(t'')-(Nx)(t')||&\leq &||T(t'')-T(t')|| \ ||x_0+g(x)||\\
+& &+\left\|\int^{t''}_0(t''-s)^{q-1}S(t''-s)F(s)ds-\int^{t'}_0(t'-s)^{q-1}S(t'-s)F(s)ds\right\|\\
+& &+\left\|\displaystyle \sum_{k=1}^m T(t''-t_k)I_k(x(t_k^-))-\sum_{k=1}^mT(t'-t_k)I_k(x(t_k^-))\right\|,
+\end{eqnarray*}
+after some calculuation, we have 
+\begin{eqnarray*}
+&\leq&||T(t'')-T(t')|| \ ||x_0+g(x)||+m||T(t''-t')|| \ ||I_k(x(t_k^-))||\\
+& &+\left\|\int^{t''}_{t'}(t''-s)^{q-1}S(t''-s)F(s)ds\right\|\\
+& &+\left\|\int^{t'}_0\left[(t''-s)^{q-1}-(t'-s)^{q-1}\right]S(t''-s)F(s)ds\right\|\\
+& & +\left\|\int^{t'}_0(t'-s)^{q-1}\left[S(t''-s)-S(t'-s)\right]F(s)ds\right\|
+\end{eqnarray*}
+Using $T(t)$ and $S(t)$ is uniformly continuous and the well known inequality $|t'^\sigma-t''^\sigma|\leq (t''-t')^\sigma$ for $\sigma \in (0,1]$ and $0<t'\leq t''$
+\begin{eqnarray*}
+\displaystyle \lim_{t'' \rightarrow t'}\left\|(Nx)(t'')-(Nx)(t')\right\|=0
+\end{eqnarray*}
+Thus $N(B_r)$ is equicontinuous with $B_r$ on $(t_i,t_{i+1}] \ (i=0,1,2,\cdots,m)$\\
+{\bf Step 4:} $N$ maps $B_r$ into a precompact set in $X$.\\
+Define $\Pi=NB_r$ and $\Pi(t)=\left\{(Nx)(t) \ : \ x\in B_r\right\}$ for $t\in J$.
+Set $\Pi_{h,\delta}(t)=\left\{(N_{h,\delta}x)(t) \ :x\in B_r\right\}$
+where
+$$
+\Pi_{h,\delta}(t)=\left\{T_\delta(t)(x_0+g(x))+ \int^{t-h}_0(t-s)^{q-1}S_\delta (t-s)F(s)ds \right. \\ \left. +\displaystyle \sum_{k=1}^m T_\delta(t-t_k)I_k(x(t_k^-)) \ : \ x\in B_r\right\}.
+$$
+From lemma 2.3(ii),(iii) and (H10),  we can verify that the set $\Pi(t)$ can be arbitrary approximated by the relatively compact set $\Pi_{h,\delta}(t)$. Thus, $N(B_r)(t)$ is relatively compact in $X$.\\
+{\bf Step 5:} The set $E=\left\{x\in PC[J,X] : x=\lambda Nx \ for \ 0<\lambda <1\right\}$ is bounded.\\
+Let $x\in E$, then
+\begin{eqnarray}
+x(t)=\left\{\begin{array}{ll}\lambda\mc{T}(t)(x_0+g(x)) +\lambda\int^t_0(t-s)^{q-1}\mc{S} (t-s)  \\ [3pt] \indent \indent (\times)f(s,x_s,\int^s_0h(s,\tau,x_\tau)d\tau,\int^b_0k(s,\tau,x_\tau)d\tau)ds, \ \ \ \ t\in [0,t_1], \\ [3pt]
+\lambda\mc{T}(t)(x_0+g(x))+\lambda\mc{T}(t-t_1)I_1(x(t_1^-))+\lambda\int^t_0(t-s)^{q-1}\mc{S}(t-s)\\ [3pt] \indent \indent (\times)f(s,x_s,\int^s_0h(s,\tau,x_\tau)d\tau,\int^b_0k(s,\tau,x_\tau)d\tau)ds,, \ \ \ \ t\in(t_1,t_2], \\ [3pt]
+\vdots \\ [3pt]
+\lambda\mc{T}(t)(x_0+g(x))+\lambda\displaystyle \sum_{k=1}^{m} \mc{T}(t-t_k)I_k(x(t_k^-))+\lambda\int^t_0(t-s)^{q-1}\mc{S}(t-s)\\ [3pt] \indent \indent (\times)f(s,x_s,\int^s_0h(s,\tau,x_\tau)d\tau,\int^b_0k(s,\tau,x_\tau)d\tau)ds, \ \ \ \ t\in(t_m,b].
+\end{array}
+\right.
+\end{eqnarray} 
+From (3.16) we know
+\begin{eqnarray}
+||x(t)||&\leq& \lambda M_1\left(||x_0||+k_1\right)+\frac{b^qM_1}{\Gamma(1+q)}\int^b_0\Psi_1(s)ds\nonumber \\
+& &+\lambda \left(G+mM_1\Phi_k+\frac{b^qM_1}{\Gamma(1+q)}\int^t_0\Psi_2(s)ds\right) \ ||x(t)||.\nonumber\\
+\end{eqnarray}
+Obviously there exists $\lambda$ sufficiently small such that $\rho=1-M_1k_1\lambda-\lambda G-\lambda mM_1\Phi_k >0 $ and then we get
+\begin{eqnarray*}
+||x(t)||&\leq & \frac{\lambda M_1}{\rho}||x_0||+\frac{\lambda b^qM_1}{\rho \Gamma(1+q)}\int^b_0\Psi_1(s)ds\\
+& & +\frac{\lambda b^qM_1}{\rho\Gamma (1+q)}\int^t_0\Psi_2(s)||x(s)||ds.
+\end{eqnarray*}
+Let
+\begin{eqnarray*}
+Q={\lambda M_1}{\rho}||x_0||+\frac{\lambda b^qM_1}{\rho \Gamma (1+q)}\int^b_0\Psi_1(s)ds, \ f(t)=\frac{\lambda b^q M_1}{\rho \Gamma(1+q)}\int^t_0\Psi_2(s)ds.
+\end{eqnarray*}
+It is clear that $f(t)$ is nonnegative continuous function on $[0,+\infty)$, generalized Bellman inequality implies that
+\begin{eqnarray}
+||x(t)||\leq Qe^{\int^t_0f(s)ds} \leq Qe^{\int^b_0f(s)ds}=C_0
+\end{eqnarray}
+where $C_0$ is a constant. Obviously, the set $E$ is bounded on $(t_i,t_{i+1}], \ (i=0,1,2,\cdots,m)$. Since $N$ is continuous and compact. From the Schaefer's fixed point theorem, $N$ has a fixed point which is a $PC$ mild solution of (1.1). This completes the Proof.
+\setcounter{equation}{0}
+
+
+\begin{thebibliography}{USA00}
+
+\bibitem{abb} S. Abbas, M. Benchohra and G.M. N'Gurekata, {\it Topics in Fractional Differential Equations}, Springer, New York, 2012.
+\bibitem{aba} N. Abada, M. Benchohra, H. Hammouche, Existence and controllability results for nondensely defined impulsive semilinear functional differential inclusions, {\it Journal of Differential Equations}, 246(2009), 3834-3863.
+
+\bibitem{bala} K. Balachadran, S. Kiruthika, J.J. Trujillo, Existence results for fractional impulsive integrodifferential equations in Banach spaces, {\it Communications in Nonlinear Science and Numerical Simulation}, 16, (4)(2011),1970-1977.
+
+\bibitem{bale} D. Baleanu, Z.B.Gunavenc and J.A.T. Machdo, {\it New Trends in Nanotechnology and Fractional Calculus Applications}, Springer, New York, NY, USA, 2010.
+
+
+
+\bibitem{bal1} D. Baleanu, K. Diethelm, E. Scalas and J. J. Trujillo, {\it Fractional Calculus Models and Numerical Methods (Series on Complexity, Nonlinearity and Chaos)}, World Scientific, 2012.
+
+\bibitem{baz} E. Bazhlekova, Fractional Evolution equations in Banach Spaces, in: {\it University Press Facilities, Eindhoven University of Technology}, 2001.
+
+\bibitem{ben} M. Benchohra, B.A. Slimani, Existence and uniqueness of solutions to impulsive fractional differential equations, {\it Electronic Journal of differential equations}, 10(2009), 1-11.
+
+
+
+\bibitem{benc}M.Benchohra, S.Ntouyas, Existence and controllability results for mutivalued semilinear differential equations with nonlocal conditions, {\it Soochow Journal of Mathematics}, 29(2003), 157-170.
+
+\bibitem{bys}L.Byszwski, Theorems about the existence and uniqueness of solutions of semi linear evolution nonlocal Cauchy problem, {\it Journal of Mathematical Analysis and Applications}, 162(1991), 494-505.
+
+\bibitem{bys1}L. Byszewski, Existence of solutions of semilinear fuctional differential evolution nonlocal problem, {\it Nonlinear Analysis}, 34(1998), 65-72.
+
+
+
+\bibitem{chen} F. Chen, A. Chen and X. Wang, On solutions for impulsive fractional functional differential equations, {\it Differential Equations and Dynamical Systems}, 17(4)(2009), 379-391.
+
+
+\bibitem{dar}M.A. Darwish, J. Henderson, S.K.Ntouyas, Fractional order semilinear mixed type functional differential equations and inclusions,{\it Nonlinear Studies}, 16(2)(2009) 197-219.
+
+
+\bibitem{deb} A. Debbouchea, D. Baleanu, Controllability of fractional evolution nonlocal impulsive quasilinear delay integro-differential systems, {\it Computers and Mathematics with Applications}, 62(3) (2011), 1442-1450.
+
+\bibitem{die} K. Diethelm, {\it The Analysis of Fractional Differential Equations}, in : Lecture notes in Mathematics, 2010.
+
+
+\bibitem{her} E. Hernandez, M. Rabello, H. Henriquez, Existence of solutions for impulsive partial neutral functional differential equations, {\it Journal of Mathematical Analysis and Applications}, 331(2) (2007), 1135-1158.
+
+\bibitem{kha} Khalida Aissani, Mouffak Benchohra, Fractional integro-differential equations with state dependent delay, {\it Advances in Dynamical Systems and Applications}, 9,1(2014), 17-30.
+
+\bibitem{kil} A. Kilbas, H. Srivastava and J.Trujillo, {\it Theory and Applications of Fractional Differential Equations}, Elsevier, Amesterdam, 2006.
+
+\bibitem{lak} V. Lakshmikantham, S. Leela, J. Vasundhara Devi, {\it Theory of Fractional Dynamic Systems}, Cambridge Scientific Publishers, 2009.
+
+\bibitem{luch} Y.F. Luchko, M. Rivero, J.J. Trujillo and M.P. Velasco, `Fractional models, non-locality and complex systems"', {\it Computers and Mathematics with Applications}, 59, (3)(2010), 1048-1056.
+
+
+
+\bibitem{mic}M.W. Michalski, {\it Derivatives of Non-integer order and their Applications}, Dissertations Mathematicae, Polska Akademia Nauk., Instytut Matematyczny, Warszawa, 1993.
+
+\bibitem{mill} K.S. Miller and B. Ross, {\it An Introduction to the Fractional Calculus and Fractional Differential Equations}, Wiley, New York, 1993.
+
+\bibitem{mop1} G.M.Mophou, G.M.N'Gurekata, Mild solutions for semilinear fractional dfferential equations, {\it Electronic Journal of Differential Equations}, 2009(21) (2009) 1-9.
+
+\bibitem{mop2}G.M. Mophou, G.M.N'Gurekata, Existence of mild solutions of some semilinear neutral fractional functional evolution equations with infinite delay, {\it Applied Mathematics and Computation}, 216(2010), 61-69.
+
+
+
+
+\bibitem{moph1}G.M. Mophou, G.M.N'Gurekata, Existence of mild solution for some fractional differential equations with nonlocal conditions, {\it Semigroup Forum}, 79(2) (2009), 315-322.
+
+\bibitem{pan} D.N. Pandey, A. Ujlayan, D. Bahuguna, On solution to fractional order integro-differential equations with analytic semigroups, {\it Nonlinear Analysis}, 71(9)(2009), 3690-3698.
+
+\bibitem{pazy} A. Pazy, {\it Semigroups of Linear Operators and Applications to Partial Differential Equations}, 44, Applied Mathematical Sciences, Springer, New York, USA, 1983.
+
+\bibitem{pod} I. Podlubny, {\it Fractional Differential Equations}, Academic Press, New York, 1999.
+
+\bibitem{qin}Haiyong Qin, Xin Zuo, Jianwei Liu, Existence and controllability results for fractional impulsive integrodifferential systems in Banach Spaces, {\it Abstract and Applied Analysis}, 2013, 1-12.
+
+\bibitem{ras}M.H. Rashid, Y. El-Qaderi, Semilinear fractional integro-differential equations with compact semigroup, {\it Nonlinear Analysis}, 71(12)(2009)6276-6282.
+
+\bibitem{ravi}C. Ravichandran and D.Baleanu, Existence results for fractional neutral functional integrodifferential evolution equations with infinite delay in Banach spaces, {\it Advances in Difference Equations}, 215, 1(2013), 1-12.
+
+\bibitem{ravi1} C. Ravichandran, J.J.Trujillo, Controllability of impulsive fractional functional integro-differential in Banach Spaces, {\it Journal of Function Spaces and Applications}, 2013, 1-8.
+
+
+
+\bibitem{sur} S. Kumar, N. Sukavanam, Controllability of fractional order system with nonlinear term having integral contractor, {\it Fractional Calculus and Applied Analysis}, 16,4(2013), 791-801.
+
+
+
+
+
+\bibitem{tar} V.E.Tarasov, {\it Frctional Dynamics, Application of Fractional Ccalculus to Dynamics of Particles}, Fields and Media, Springer, HEP, 2010.
+
+\bibitem{vijay}V.Vijayakumar, A.Selvakumar, R.Murugesu, Controllability for a class of fractional neutral integrodifferential equations with unbounded delay, {\it Applied Mathematics and Computation}, 232(2014), 303-312.
+
+\bibitem{wan} J.R. Wang, M. Feckan, Y.Zhou, On the new concept of solutions and existence results for impulsive fractional evolution equations, {\it Dynamics of Partial Differential Equations}, 8(4) (2011) 345-361.
+
+
+
+\bibitem{xia} Xianmin Zhang, Xiyue Huang, Zuohua Liu, The existence and uniqueness of mild solutions for impulsive fractional equations with nonlocal conditions and infinite delay, {\it Nonlinear Analyis: Hybrid Systems}, 4(2010), 775-781.
+
+
+
+\bibitem{shu} X.B. Shu, Y. Lai, Y. Chen, The existence of mild solutions for impulsive fractional partial differential equations, {\it Nonlinear Analysis}, 74(5) (2011), 2003-2011.
+
+\end{thebibliography}
+
+
+\bibitem{pan} D.N. Pandey, A. Ujlayan, D. Bahuguna, On solution to fractional order integro-differential equations with analytic semigroups, {\it Nonlinear Analysis}, 71(9)(2009), 3690-3698.
+
+\bibitem{pazy} A. Pazy, {\it Semigroups of Linear Operators and Applications to Partial Differential Equations}, 44, Applied Mathematical Sciences, Springer, New York, USA, 1983.
+
+\bibitem{pod} I. Podlubny, {\it Fractional Differential Equations}, Academic Press, New York, 1999.
+
+\bibitem{qin}Haiyong Qin, Xin Zuo, Jianwei Liu, Existence and controllability results for fractional impulsive integrodifferential systems in Banach Spaces, {\it Abstract and Applied Analysis}, 2013, 1-12.
+
+\bibitem{ras}M.H. Rashid, Y. El-Qaderi, Semilinear fractional integro-differential equations with compact semigroup, {\it Nonlinear Analysis}, 71(12)(2009)6276-6282.
+
+\bibitem{ravi}C. Ravichandran and D.Baleanu, Existence results for fractional neutral functional integrodifferential evolution equations with infinite delay in Banach spaces, {\it Advances in Difference Equations}, 215, 1(2013), 1-12.
+
+\bibitem{ravi1} C. Ravichandran, J.J.Trujillo, Controllability of impulsive fractional functional integro-differential in Banach Spaces, {\it Journal of Function Spaces and Applications}, 2013, 1-8.
+
+
+
+\bibitem{sur} S. Kumar, N. Sukavanam, Controllability of fractional order system with nonlinear term having integral contractor, {\it Fractional Calculus and Applied Analysis}, 16,4(2013), 791-801.
+
+
+
+
+
+\bibitem{tar} V.E.Tarasov, {\it Frctional Dynamics, Application of Fractional Ccalculus to Dynamics of Particles}, Fields and Media, Springer, HEP, 2010.
+
+\bibitem{vijay}V.Vijayakumar, A.Selvakumar, R.Murugesu, Controllability for a class of fractional neutral integrodifferential equations with unbounded delay, {\it Applied Mathematics and Computation}, 232(2014), 303-312.
+
+\bibitem{wan} J.R. Wang, M. Feckan, Y.Zhou, On the new concept of solutions and existence results for impulsive fractional evolution equations, {\it Dynamics of Partial Differential Equations}, 8(4) (2011) 345-361.
+
+
+
+\bibitem{xia} Xianmin Zhang, Xiyue Huang, Zuohua Liu, The existence and uniqueness of mild solutions for impulsive fractional equations with nonlocal conditions and infinite delay, {\it Nonlinear Analyis: Hybrid Systems}, 4(2010), 775-781.
+
+
+
+\bibitem{shu} X.B. Shu, Y. Lai, Y. Chen, The existence of mild solutions for impulsive fractional partial differential equations, {\it Nonlinear Analysis}, 74(5) (2011), 2003-2011.
+
+\end{thebibliography}
+
+\end{document}
